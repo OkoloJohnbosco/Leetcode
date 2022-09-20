@@ -4,13 +4,8 @@ nums2 = [1, 2, 3, 4]
 nums3 = [1, 1, 1, 3, 3, 4, 3, 2, 4, 2]
 
 
-def contains_dup(arr):
-    check_list = []
-    for num in arr:
-        if num in check_list:
-            return True
-        check_list.append(num)
-    return False
+def contains_dup(nums):
+    return len(set(nums)) != len(nums)
 
 
 print(contains_dup(nums1))
